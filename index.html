@@ -3,82 +3,101 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>G7 HCI Final Project</title>
+    <title>G7 HCI Final Project — Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#">G7 HCI</a>
+        <a class="navbar-brand d-flex align-items-center" href="#"><div class="brand-box me-2">BH</div><span class="fw-bold">Berkshire Hathaway</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#businesses">Businesses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#investors">Investors</a></li>
           </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary btn-sm" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
 
-    <header class="bg-light py-5">
-      <div class="container text-center">
-        <h1 class="display-5">Welcome to the G7 HCI Final Project</h1>
-        <p class="lead">A Bootstrap template to jumpstart your web prototype.</p>
-        <p class="mt-4"><a href="#features" class="btn btn-primary btn-lg">See Features</a></p>
+    <header class="hero py-6">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 text-center text-lg-start">
+            <p class="est">Est. 1965</p>
+            <h1 class="site-title">Berkshire Hathaway <span class="block">INC.</span></h1>
+            <p class="lead text-muted mt-3">A holding company for a diverse range of businesses. We invest for the long term.</p>
+            <div class="mt-4">
+              <a href="#about" class="btn btn-outline-dark me-2">Know more</a>
+              <a href="#message" class="btn btn-dark">A Message from Mr. Buffett</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 position-relative mt-5 mt-lg-0">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Portrait" class="img-fluid rounded-3 shadow-lg hero-img">
+            <div class="profile-card shadow-sm">
+              <div class="fw-bold">Warren E. Buffett</div>
+              <div class="text-muted small">Chairman, Berkshire Hathaway Inc.</div>
+              <div class="mt-2">$146.3B</div>
+            </div>
+            <blockquote class="blockquote-quote">“It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price.”</blockquote>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section id="features" class="py-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Responsive</h5>
-                <p class="card-text">Built with Bootstrap 5 for mobile-first responsiveness.</p>
-              </div>
+    <section id="about" class="py-6 bg-light">
+      <div class="container text-center">
+        <h3 class="section-title">ABOUT US</h3>
+        <div class="row mt-4 g-4 justify-content-center">
+          <div class="col-md-3">
+            <div class="stat-card shadow-sm p-4 bg-white rounded">
+              <div class="stat-number">380,000 +</div>
+              <div class="stat-label">Employees Worldwide</div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Customizable</h5>
-                <p class="card-text">Easy to adapt styles and components for your project.</p>
-              </div>
+          <div class="col-md-3">
+            <div class="stat-card shadow-sm p-4 bg-white rounded">
+              <div class="stat-number">60+</div>
+              <div class="stat-label">Subsidiary Companies</div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Accessible</h5>
-                <p class="card-text">Focus on semantics and accessibility best practices.</p>
-              </div>
+          <div class="col-md-3">
+            <div class="stat-card shadow-sm p-4 bg-white rounded">
+              <div class="stat-number">60 Years</div>
+              <div class="stat-label">Of Consistent Growth</div>
             </div>
           </div>
+        </div>
+        <div class="mt-4"><a class="btn btn-outline-secondary" href="#">Know more</a></div>
+      </div>
+    </section>
+
+    <section id="investors" class="py-6">
+      <div class="container text-center">
+        <h4 class="mb-3">INVESTOR RESOURCES</h4>
+        <p class="text-muted">Access shareholder letters, financial reports, and comprehensive company information.</p>
+        <div class="row mt-4 g-3 justify-content-center">
+          <div class="col-md-3"><a class="btn btn-secondary w-100" href="#">Annual & Interim Reports</a></div>
+          <div class="col-md-3"><a class="btn btn-outline-secondary w-100" href="#">Letters</a></div>
+          <div class="col-md-3"><a class="btn btn-outline-secondary w-100" href="#">Financials</a></div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="py-5 bg-body-secondary">
-      <div class="container">
-        <h2>About</h2>
-        <p>This is a simple starting template for the G7 HCI Final Project. Replace content as needed.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Team: G7 — Human Computer Interaction</p>
-      </div>
-    </section>
-
-    <footer class="bg-dark text-white py-3">
-      <div class="container text-center">© 2026 G7 HCI</div>
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">© 2026 Berkshire Hathaway</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
