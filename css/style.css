@@ -21,7 +21,7 @@ body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; col
 .floating-navbar{
 	background:rgba(255,255,255,0.95);
 	border:1px solid rgba(16,24,40,0.06);
-	border-radius:12px;
+	border-radius:0px;
 	backdrop-filter:blur(10px);
 	padding:.75rem 1rem;
 	box-shadow:0 10px 30px rgba(16,24,40,0.08);
@@ -31,14 +31,17 @@ body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; col
 	box-shadow:0 14px 36px rgba(16,24,40,0.12);
 	transform:translateY(-1px);
 }
-.navbar{padding:0}
-.brand-box{width:44px;height:36px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:#fbfbff;color:var(--accent);border:1px solid rgba(19,41,75,0.06);font-family:'Playfair Display', serif}
-.navbar .nav-link{color:#495057;padding:.55rem .8rem;border-radius:8px;transition:all .15s ease;position:relative}
+.navbar{padding:10px}
+.nav-links-row{gap:.25rem;align-items:center}
+.nav-links-row .nav-item{flex:1;min-width:0}
+.nav-links-row .nav-link{text-align:center;white-space:nowrap;width:100%}
+.brand-box{width:44px;height:36px;border-radius:0px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:#fbfbff;color:var(--accent);border:1px solid rgba(19,41,75,0.06);font-family:'Playfair Display', serif}
+.navbar .nav-link{color:#495057;padding:.55rem .8rem;border-radius:0px;transition:all .15s ease;position:relative}
 .navbar .nav-link:hover{color:var(--accent);background:rgba(19,41,75,0.035)}
 .navbar .nav-link::after{content:"";position:absolute;left:.8rem;right:.8rem;bottom:.35rem;height:1px;background:currentColor;opacity:0;transform:scaleX(.75);transition:opacity .15s ease, transform .15s ease}
 .navbar .nav-link:hover::after{opacity:.8;transform:scaleX(1)}
 .navbar .nav-link.active{color:var(--accent);font-weight:600}
-.btn-contact{background:#f3f5f8;border:1px solid rgba(16,24,40,0.06);color:#1f2937;border-radius:8px;font-weight:600}
+.btn-contact{background:#f3f5f8;border:1px solid rgba(16,24,40,0.06);color:#1f2937;border-radius:0px;font-weight:600}
 .btn-contact:hover{background:#e9edf2;color:#111}
 .nav-search-btn{color:#6b7280}
 .nav-search-btn:hover{color:var(--accent)}
@@ -74,6 +77,9 @@ footer{border-top:1px solid rgba(16,24,40,0.04)}
 	.floating-navbar{padding:.7rem .9rem}
 	.site-title{font-size:2rem}
 	.navbar-actions{margin-top:.75rem}
+	.nav-links-row{width:auto}
+	.nav-links-row .nav-item{flex:auto}
+	.nav-links-row .nav-link{text-align:left}
 }
 
 /* Utility */
