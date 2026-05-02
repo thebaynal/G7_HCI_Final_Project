@@ -1,20 +1,38 @@
 /* Custom styles for the homepage */
 :root{--accent:#1f2b6b;--muted:#6c757d}
-body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222}
-.brand-box{width:40px;height:34px;border:1px solid #e9e9ef;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:#f8f9ff;color:var(--accent);border-radius:4px}
-.hero{padding-top:4.5rem;padding-bottom:4.5rem}
-.est{font-size:.9rem;color:var(--muted);letter-spacing:.12rem}
+html,body{height:100%;margin:0}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222;background:#fff}
+
+/* Navbar: full-bleed, sticky with light blur for modern look */
+.navbar{position:sticky;top:0;left:0;right:0;width:100%;z-index:1030;background:rgba(255,255,255,0.88);backdrop-filter:blur(6px);border-bottom:1px solid rgba(16,24,40,0.04)}
+.navbar .container{display:flex;align-items:center}
+.navbar .brand-box{width:44px;height:36px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:#fbfbff;color:var(--accent);border:1px solid rgba(31,43,107,0.08);font-family:Playfair Display, serif}
+.navbar .navbar-brand{gap:.5rem}
+.navbar .nav-link{color:#495057;padding:.6rem 0.9rem;border-radius:6px;transition:all .15s ease}
+.navbar .nav-link:hover{color:var(--accent);background:rgba(31,43,107,0.04)}
+.navbar .nav-link.active{color:var(--accent);font-weight:600}
+.navbar .form-control-sm{min-width:180px}
+
+.hero{padding-top:5rem;padding-bottom:4.5rem}
+.est{font-size:.95rem;color:var(--muted);letter-spacing:.12rem}
 .site-title{font-family:'Playfair Display', serif;font-size:3.2rem;color:var(--accent);letter-spacing:.12rem}
 .site-title .block{display:block}
-.hero-img{width:100%;height:auto;object-fit:cover}
-.profile-card{position:absolute;left:10px;top:10px;background:#fff;padding:12px 14px;border-radius:8px;min-width:160px}
+.hero-img{width:100%;height:auto;object-fit:cover;border-radius:12px}
+.profile-card{position:absolute;left:8px;top:8px;background:#fff;padding:12px 14px;border-radius:10px;min-width:160px;box-shadow:0 6px 18px rgba(31,43,107,0.08)}
 .blockquote-quote{position:absolute;right:0;bottom:-30px;width:80%;font-style:italic;color:#444}
+
 .section-title{color:var(--accent);font-weight:700}
 .stat-card{min-height:110px}
 .stat-number{font-size:1.4rem;font-weight:700;color:var(--accent)}
 .stat-label{color:var(--muted)}
+
+/* Buttons subtle modern style */
+.btn-outline-dark{border-color:rgba(16,24,40,0.08);color:#111}
+.btn-dark{background:#222;color:#fff;border-color:transparent}
+
 @media (max-width:991px){
 	.site-title{font-size:2.2rem}
 	.blockquote-quote{position:static;margin-top:12px}
 	.profile-card{position:static;margin-top:12px}
+	.navbar .form-control-sm{min-width:120px}
 }
