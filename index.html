@@ -1,133 +1,161 @@
 <!doctype html>
+<!--
+  Corporate homepage (Bootstrap) — clean, minimal, responsive
+  - Uses Playfair Display for headings and Inter for body
+  - Neutral palette, sticky navbar, hero with portrait card
+-->
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>G7 HCI Final Project — Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Berkshire Hathaway Inc. — Home</title>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html"><div class="brand-box me-2">BH</div><span class="fw-bold">Berkshire Hathaway</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Businesses</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#investors">Investors</a></li>
-          </ul>
-          <form class="d-flex ms-auto" role="search">
-            <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-secondary btn-sm" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <header class="hero py-6">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 text-center text-lg-start">
-            <p class="est">Est. 1965</p>
-            <h1 class="site-title">Berkshire Hathaway <span class="block">INC.</span></h1>
-            <p class="lead text-muted mt-3">A holding company for a diverse range of businesses. We invest for the long term.</p>
-            <div class="mt-4">
-              <a href="#about" class="btn btn-outline-dark me-2">Know more</a>
-              <a href="#message" class="btn btn-dark">A Message from Mr. Buffett</a>
+    <!-- Navbar: sticky, centered nav links, search icon on right -->
+    <header class="site-header shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="brand-box me-2">BH</div>
+            <div class="brand-text">
+              <strong>Berkshire Hathaway</strong>
             </div>
-          </div>
+          </a>
 
-          <div class="col-lg-5 position-relative mt-5 mt-lg-0">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Portrait" class="img-fluid rounded-3 shadow-lg hero-img">
-            <div class="profile-card shadow-sm">
-              <div class="fw-bold">Warren E. Buffett</div>
-              <div class="text-muted small">Chairman, Berkshire Hathaway Inc.</div>
-              <div class="mt-2">$146.3B</div>
-            </div>
-            <blockquote class="blockquote-quote">“It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price.”</blockquote>
-          </div>
-        </div>
-      </div>
-    </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <section id="about" class="py-6 bg-light">
-      <div class="container text-center">
-        <h3 class="section-title">ABOUT US</h3>
-        <div class="row mt-4 g-4 justify-content-center">
-          <div class="col-md-3">
-            <div class="stat-card shadow-sm p-4 bg-white rounded">
-              <div class="stat-number">380,000 +</div>
-              <div class="stat-label">Employees Worldwide</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="stat-card shadow-sm p-4 bg-white rounded">
-              <div class="stat-number">60+</div>
-              <div class="stat-label">Subsidiary Companies</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="stat-card shadow-sm p-4 bg-white rounded">
-              <div class="stat-number">60 Years</div>
-              <div class="stat-label">Of Consistent Growth</div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-4"><a class="btn btn-outline-secondary" href="#">Know more</a></div>
-      </div>
-    </section>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Businesses</a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#investors">Investors</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
 
-    <section id="investors" class="py-6">
-      <div class="container text-center">
-        <h4 class="mb-3">INVESTOR RESOURCES</h4>
-        <p class="text-muted">Access shareholder letters, financial reports, and comprehensive company information.</p>
-        <div class="row mt-4 g-3 justify-content-center">
-          <div class="col-md-3"><a class="btn btn-secondary w-100" href="#">Annual & Interim Reports</a></div>
-          <div class="col-md-3"><a class="btn btn-outline-secondary w-100" href="#">Letters</a></div>
-          <div class="col-md-3"><a class="btn btn-outline-secondary w-100" href="#">Financials</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-6 bg-white">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h4 class="text-center mb-3">Contact Us</h4>
-            <p class="text-center text-muted">Send us a message and we'll get back to you.</p>
-            <form id="contactForm" class="mt-4" action="/api/contact" method="post">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input name="name" class="form-control" placeholder="Your name" required>
-                </div>
-                <div class="col-md-6">
-                  <input name="email" type="email" class="form-control" placeholder="Your email" required>
-                </div>
-                <div class="col-12">
-                  <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                </div>
-                <div class="col-12 d-flex align-items-center">
-                  <button class="btn btn-primary me-3" type="submit">Send message</button>
-                  <div class="small text-muted">Messages are sent to the server via standard form POST.</div>
-                </div>
-              </div>
+            <form class="d-flex align-items-center ms-auto" role="search">
+              <button class="btn btn-link p-0" aria-label="Search">
+                <!-- simple search icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 1.656a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <footer class="bg-dark text-white py-4">
-      <div class="container text-center">© 2026 Berkshire Hathaway</div>
+    <!-- Main content container (max-width centered) -->
+    <main class="site-main">
+      <!-- Hero -->
+      <section class="hero-section py-5">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <!-- Left: Heading and CTAs -->
+            <div class="col-lg-7 text-center text-lg-start">
+              <p class="est">Est. 1965</p>
+              <h1 class="display-4 site-title">Berkshire Hathaway <span class="fw-normal">Inc.</span></h1>
+              <p class="lead text-muted mt-3">A holding company for a diverse range of businesses. We invest for the long term.</p>
+
+              <div class="mt-4 d-flex flex-column flex-sm-row gap-2 gap-sm-3 justify-content-center justify-content-lg-start">
+                <a class="btn btn-outline-secondary btn-lg" href="about.html">Know more</a>
+                <a class="btn btn-dark btn-lg" href="#contact">A Message from Mr. Buffett</a>
+              </div>
+            </div>
+
+            <!-- Right: Portrait card + quote -->
+            <div class="col-lg-5">
+              <div class="card portrait-card border-0 shadow-sm overflow-hidden">
+                <div class="row g-0">
+                  <div class="col-5 d-none d-md-block px-0">
+                    <!-- Placeholder image -->
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Portrait" class="img-fluid h-100 object-cover" />
+                  </div>
+                  <div class="col-md-7 p-4">
+                    <h5 class="mb-1">Warren E. Buffett</h5>
+                    <p class="small text-muted mb-2">Chairman, Berkshire Hathaway Inc.</p>
+                    <p class="mb-2 text-muted small">Net worth: <strong>$146.3B</strong></p>
+                    <p class="fst-italic">“It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price.”</p>
+                    <a class="btn btn-sm btn-outline-dark mt-2" href="#">Read message</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+          <h3 class="section-title">ABOUT US</h3>
+          <p class="text-muted mb-4">Focused on long-term value and stewardship across a diversified group of companies.</p>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card info-card shadow-sm p-4">
+                <div class="stat-number">380,000+</div>
+                <div class="stat-label text-muted">Employees Worldwide</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card info-card shadow-sm p-4">
+                <div class="stat-number">60+</div>
+                <div class="stat-label text-muted">Subsidiary Companies</div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card info-card shadow-sm p-4">
+                <div class="stat-number">60 Years</div>
+                <div class="stat-label text-muted">Of Consistent Growth</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a class="btn btn-outline-secondary" href="about.html">Know more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Investor resources -->
+      <section id="investors" class="py-5">
+        <div class="container text-center">
+          <h4 class="mb-3">INVESTOR RESOURCES</h4>
+          <p class="text-muted mb-4">Access annual shareholder letters, financial reports, and company filings.</p>
+
+          <div class="row g-3 justify-content-center">
+            <div class="col-sm-6 col-md-3"><a class="btn btn-secondary w-100" href="#">Annual & Interim Reports</a></div>
+            <div class="col-sm-6 col-md-3"><a class="btn btn-outline-secondary w-100" href="#">Letters</a></div>
+            <div class="col-sm-6 col-md-3"><a class="btn btn-outline-secondary w-100" href="#">SEC Filings</a></div>
+            <div class="col-sm-6 col-md-3"><a class="btn btn-outline-secondary w-100" href="#">Stock Information</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container text-center small">© 2026 Berkshire Hathaway Inc.</div>
     </footer>
 
+    <!-- Bootstrap JS (bundle includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
