@@ -11,4 +11,22 @@ Files added:
 - `index.html` — main template
 - `css/style.css` — minimal custom styles
 
+Pages in this site:
+- `index.html` — Homepage
+- `about.html` — About us page
+- `news.html` — News and announcements
+
+View locally (quick):
+
+```powershell
+# from the repo folder
+python -m http.server 8000
+# then open http://localhost:8000/index.html
+```
+
+Or open `index.html` directly in your browser (works for static demo).
+
+Publishing:
+- I can add a GitHub Actions workflow to deploy this repo to GitHub Pages. GitHub Pages serves static sites only — APIs must run on a separate host.
+
 Replace content as needed for your project.
